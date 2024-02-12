@@ -4,7 +4,9 @@ import time
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from dotenv import load_dotenv
 
+load_dotenv()
 users = {}
 _api_id = os.getenv('API_ID')
 _api_hash = os.getenv('API_HASH')
